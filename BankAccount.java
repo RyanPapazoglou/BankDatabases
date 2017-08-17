@@ -32,6 +32,7 @@ public abstract class BankAccount
         if((this.balance-amount) < 0) {
             return "Insufficient funds";
         }else {
+            System.out.println("Changes made");
             this.balance -= amount;
             return "Withdrawl successful, account balance: " + this.balance;
         }
